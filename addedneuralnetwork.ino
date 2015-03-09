@@ -68,7 +68,6 @@ int rightDistance()
 	return rightSonar.ping() / US_ROUNDTRIP_CM;
 }
 
-
 int frontDistance()
 {
 	return frontSonar.ping() / US_ROUNDTRIP_CM;
@@ -85,7 +84,6 @@ void setup()
 	delay(3000);
 	/* add setup code here */
 }
-
 
 void updateDistance()
 {
@@ -106,7 +104,6 @@ char decision()
 
 void loop()
 {
-
 	updateDistance();
 	switch (decision())
 	{
